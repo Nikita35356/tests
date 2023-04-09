@@ -19,7 +19,7 @@ header {
 
 .button {
     background-color: var(--up);
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 15px;
     font-size: 24px;
