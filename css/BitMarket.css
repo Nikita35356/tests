@@ -1,0 +1,98 @@
+:root {
+    --but: #640CAB;
+    --up: #9240D5;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: var(--up);
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    padding: 25px 100px 25px 95px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0px;
+}
+
+article {
+    width: 390px;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.article-but {
+    text-decoration: none;
+    background-color: var(--but);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px 10px 75px;
+    margin: auto auto 10px auto;
+
+}
+
+footer {
+    vertical-align: middle;
+    display: flex;
+    padding: 10px;
+    background-color: white;
+}
+
+footer a {
+    margin: 10px;
+}
+
+footer p {
+    margin-left: 10px;
+    color: black;
+    font-size: 24px;
+    
+}
