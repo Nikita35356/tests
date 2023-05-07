@@ -1,0 +1,191 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+h1::after, h1::before {
+    content: '⬥';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #36bbce;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 10px;
+    display: block;
+}
+
+nav {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    padding: 25px 100px 25px 95px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-size: 24px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    display: block;
+}
+
+.nav-link:hover {
+    filter: brightness(1.2);
+}
+
+.nav-link::after, .nav-link::before {
+    content: '~';
+}
+
+.post {
+    position: relative;
+}
+
+.post .void{
+    background-image: url(https://learn.algoritmika.org/uploads/student/2136839/645755f49190b.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    background-size: 100% 100%;
+    transition: 0.15s;
+}
+
+.post .void:hover{
+    transform: scale(1.2);
+}
+
+.post .love{
+    transition: 0.1s;
+    background-image: url(https://learn.algoritmika.org/uploads/student/2136839/645755ed334ed.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-size: 100% 100%;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.post-text {
+    font-size: 24px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: white;
+    padding: 15px 45px 30px 45px;
+    width: 400px;
+    margin: 20px;
+    position: relative;
+}
+
+.article-but {
+    text-decoration: none;
+    background-color: #133aac;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px 10px 75px;
+    display: block;
+}
+
+.article-but:hover {
+    filter: brightness(1.3);
+}
+
+.full-image {
+    margin: 100px 0px 100px 0px;
+}
+
+.social {
+    display: block;
+    width: 30px;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 30px 20px 45px;
+}
+
+.footer-text {
+    font-size: 24px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.footer-text span {
+    color: #850AE5;
+    font-weight: bolder;
+}
+
+.socials {
+    text-align: center;
+    position: fixed;
+    right: 0px;
+    background-color: #850AE5;
+    padding: 3px;
+    color: white;
+    width: 100px;
+    bottom: 0px;
+}
+
+.socials a {
+    text-align: center;
+}
+
+.address::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -50px;
+    background-image: url(https://learn.algoritmika.org/uploads/student/2136839/645759a28334a.svg);
+    background-size: 100% 100%;
+}
+
+.tel::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -50px;
+    background-image: url(https://learn.algoritmika.org/uploads/student/2136839/645759dc5e99a.svg);
+    background-size: 100% 100%;
+}
+
+.footer-text {
+    position: relative;
+}
+
+.post:hover {
+    background-color: aquamarine;
+}
