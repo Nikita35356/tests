@@ -38,3 +38,8 @@ a {
 footer {
     background-color: #679ED2;
 }
+
+a:hover {
+    background-color: #FFC673;
+    color: #2219B2;
+}
