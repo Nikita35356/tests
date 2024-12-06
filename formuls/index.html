@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Редактор</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>Введите формулу:<br /><input type="text" name="" id="inp" value="H2O = H2O" oninput="cr(inp.value)"/></p>
+        <p id="f"></p>
+        <br />
+        <input type="text" name="url" id="url" value="" />
+        <br /><br />
+        <p>Справка для написания формул:</p>
+        <p>Для написания кол-ва молекул/ионов надо писать число ПЕРЕД элементом.<br /> Пример: 2HCl</p>
+        <p>Для написания кол-ва атомов в элементе надо писать число После названия атома. <br />Пример: H2O</p>
+        <p>Для написания заряда атома после названия надо написать символ "/" и заряд атома (допускаетя символы "+" и "-")<br />Пример H/+Cl/-1</p>
+    </body>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+    function cr(formul){
+        url.value = document.location.href.substring(0, document.location.href.lastIndexOf('/'))+"formula.html?"+encodeURI(formul);
+        view(formul)
+    }
+    view("H2O = H2O")
+    </script>
+</html>
