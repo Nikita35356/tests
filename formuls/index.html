@@ -10,6 +10,7 @@
         <p id="f"></p>
         <br />
         <input type="text" name="url" id="url" value="" />
+        <button type="submit" id="c" onclick="cop()">Копировать</button>
         <br /><br />
         <p>Справка для написания формул:</p>
         <p>Для написания кол-ва молекул/ионов надо писать число ПЕРЕД элементом.<br /> Пример: 2HCl</p>
@@ -19,8 +20,13 @@
     <script src="script.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
     function cr(formul){
-        url.value = document.location.href.substring(0, document.location.href.lastIndexOf('/'))+"formula.html?"+encodeURI(formul);
+        url.value = document.location.href.substring(0, document.location.href.lastIndexOf('/'))+"/formula.html?"+encodeURI(formul);
         view(formul)
+    }
+    function cop(){
+        navigator.clipboard.writeText(url.value)
+        c.innerText = "Скопировано!"
+        setTimeout(()=>{c.innerText = "Копировать"},1000)
     }
     view("H2O = H2O")
     </script>
